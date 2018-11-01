@@ -273,7 +273,7 @@ a:hover {
 .avatar {
   width: 4rem;
   height: 4rem;
-  background-color: #fff;
+  background-color: rgba(255,255,255,0);
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -290,12 +290,15 @@ a:hover {
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  outline: 3px solid #fff;
-  outline-offset: -3px;
+  outline: 3px solid rgba(255,255,255,0);
+  outline-offset: 0px;
 }
 .avatar img {
   width: 100%;
   height: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
 }
 .author {
   margin-left: 1.142857142857143rem;
