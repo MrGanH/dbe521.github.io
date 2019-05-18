@@ -80,12 +80,34 @@ body {
     margin-top: 10px;
     margin-right: 20px;
     margin-left: 20px;
-	padding-bottom: 60px;
 }
 #help {
     margin-top: 51px;
     text-align: center;
+    padding-bottom: 100px;
 }
+.footer {
+    border-top: 1px solid #BDBDBD;
+    width: 100%;
+    line-height: 33px;
+}
+.footer #left {
+    width: 50%;
+    text-align: center;
+    color: #1FA8F3;
+    float: left;
+    font-size: 120%;
+}
+.footer #right {
+    float: right;
+    width: 50%;
+    color: #1FA8F3;
+    text-align: center;
+    font-size: 120%;
+}
+
+
+
 #help #tongji {
     font-size: 90%;
 }
@@ -98,28 +120,11 @@ body {
     margin-top: 6px;
 }
 
-#container { 
-	min-height:100%; 
-	height: auto !important; 
-	height: 100%; /*IE6不识别min-height*/ 
-	position: relative; 
-} 
-#header { 
-	background: #ff0; 
-	padding: 10px; 
-} 
-#page { 
-	width: 960px; 
-	margin: 0 auto; 
-	padding-bottom: 60px;/*等于footer的高度*/ 
-} 
-#footer { 
-	position: absolute; 
-	bottom: 0; 
-	width: 100%; 
-	height: 60px;/*脚部的高度*/ 
-	background: #6cf; 
-	clear:both; 
-} 
-
-
+.footer {
+    background: #FFF;
+    padding: 10px 0 6px 0;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
