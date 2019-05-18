@@ -90,24 +90,24 @@ body {
     text-align: center;
     padding-bottom: 100px;
 }
-.footer {
+#footer {
     border-top: 1px solid #BDBDBD;
     width: 100%;
     line-height: 33px;
 	background: #FFF;
     padding: 10px 0 6px 0;
-
+    position: fixed;
     left: 0;
     bottom: 0;
 }
-.footer #left {
+#footer #left {
     width: 50%;
     text-align: center;
     color: #1FA8F3;
     float: left;
     font-size: 120%;
 }
-.footer #right {
+#footer #right {
     float: right;
     width: 50%;
     color: #1FA8F3;
