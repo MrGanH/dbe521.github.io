@@ -94,11 +94,14 @@ body {
     border-top: 1px solid #BDBDBD;
     width: 100%;
     line-height: 33px;
-	background: #FFF;
+    background-color: #FFF;
     padding: 10px 0 6px 0;
     position: fixed;
     left: 0;
     bottom: 0;
+    background-image: url(../img/footer.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
 }
 #footer #left {
     width: 50%;
@@ -128,4 +131,3 @@ body {
     width: 81%;
     margin-top: 6px;
 }
-
