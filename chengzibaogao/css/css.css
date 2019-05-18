@@ -3,67 +3,70 @@
 html,body{height:100%;margin:0;padding: 0;}
 body {
     background-color: rgba(219,219,219,1.00);
-}#main #baogaoshili {
+}#baogaoshili  {
     color: rgba(0,147,255,1.00);
-    padding-top: 20px;
+    padding-top: 40px;
     text-align: right;
-    padding-right: 30px;
+    padding-right: 60px;
+    font-size: 200%;
+    margin-top: 0px;
 }
 #main #huoqufengxianzhishu {
-    width: 200px;
-    height: 200px;
-    margin-top: 15px;
+    width: 400px;
+    height: 400px;
+    margin-top: 30px;
     background-image: url(../img/circle.png);
-    background-size: 200px auto;
+    background-size: 400px auto;
     margin-left: auto;
     margin-right: auto;
 }
 #main #huoqufengxianzhishu #text {
     text-align: center;
     color: #1FA8F3;
-    width: 200px;
+    width: 400px;
     height: auto;
-    padding-top: 66px;
+    padding-top: 136px;
 }
 #huoqufengxianzhishu #text #huoqu {
-    font-size: 150%;
+    font-size: 270%;
     font-weight: bolder;
 }
 #huoqufengxianzhishu #text #fengxiangzhishu {
     padding-top: 6px;
+    font-size: 200%;
 }
-#main #dashujufengxianpinggu {
+#dashujufengxianpinggu  {
     text-align: center;
-    padding-top: 15px;
     text-shadow: 0px 0px;
-    font-size: 90%;
+    font-size: 190%;
+    margin-top: 45px;
 }
-#main #button {
+#button  {
     text-align: center;
-    padding-top: 16px;
     padding-bottom: 9px;
     width: 100%;
     height: 100%;
-    line-height: 39px;
+    line-height: 66px;
+    margin-top: 45px;
 }
-#main #button #putongban {
+#button #putongban  {
     width: 60%;
     border: 1px solid #1FA8F3;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 18px;
+    padding-bottom: 18px;
     color: #1FA8F3;
-    font-size: 120%;
-    border-radius: 30px;
+    font-size: 180%;
+    border-radius: 45px;
     background-color: #FFFFFF;
 }
 #zhuanyeban   {
     width: 60%;
     border: 1px solid #1FA8F3;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 18px;
+    padding-bottom: 18px;
     color: #FFFFFF;
-    font-size: 120%;
-    border-radius: 30px;
+    font-size: 180%;
+    border-radius: 45px;
     background-color: #1FA8F3;
     margin-top: 15px;
 }
