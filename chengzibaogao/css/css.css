@@ -132,3 +132,7 @@ body {
     width: 81%;
     margin-top: 6px;
 }
+#footer #footerlink {
+    text-decoration: none;
+    color: #1FA8F3;
+}
