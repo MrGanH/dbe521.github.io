@@ -4,10 +4,6 @@
 <meta charset="utf-8">
 <title>橙子报告（蓝色）</title>
 <link rel="stylesheet" type="text/css" href="css/css.css">
-<style type="text/css">
-    .main{padding-bottom:100px;background-color: #bdb76b;}/* main的padding-bottom值要等于或大于footer的height值 */
-    .footer{height:100px;margin-top:-100px;background-color: #ffc0cb;}/* margin-top（负值的）高度等于footer的height值 */
-</style>
 </head>
 
 <body>
@@ -26,29 +22,11 @@
 		</div>
 	</div>
 	<div id="help">
-		<div id="{position:fixed;bottom:0px;}"tongji"">橙子已帮助<text>2096647</text>位用户优化报告</div>
+		<div id="tongji">橙子已帮助<text>2096647</text>位用户优化报告</div>
 		<div id="helpimg"><img src="img/index_bottom2.png"></div>
 	</div>
 	<div class="footer">
 	123
 	</div>
 </body>
-	<script src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript">
-      $(function(){
-          function footerPosition(){
-              $("footer").removeClass("fixed-bottom");
-              var contentHeight = document.body.scrollHeight,//网页正文全文高度
-                  winHeight = window.innerHeight;//可视窗口高度，不包括浏览器顶部工具栏
-              if(!(contentHeight > winHeight)){
-                  //当网页正文高度小于可视窗口高度时，为footer添加类fixed-bottom
-                  $("footer").addClass("fixed-bottom");
-              } else {
-                  $("footer").removeClass("fixed-bottom");
-              }
-          }
-          footerPosition();
-          $(window).resize(footerPosition);
-      });
-    </script>
 </html>
