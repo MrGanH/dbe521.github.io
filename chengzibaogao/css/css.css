@@ -13,6 +13,12 @@ body {
     text-align: right;
     padding-right: 30px;
 }
+#main #baogaoshili a {
+    text-decoration: none;
+    color: rgba(0,147,255,1.00);
+}
+
+
 #main #huoqufengxianzhishu {
     width: 200px;
     height: 200px;
