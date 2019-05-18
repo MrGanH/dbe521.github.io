@@ -88,7 +88,7 @@ body {
 #help {
     margin-top: 51px;
     text-align: center;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
 }
 #footer {
     border-top: 1px solid #BDBDBD;
@@ -102,6 +102,7 @@ body {
     background-image: url(../img/footer.png);
     background-repeat: no-repeat;
     background-position: 50% 0%;
+    height: 39px;
 }
 #footer #left {
     width: 50%;

@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+	background-color: rgba(219,219,219,1.00);
+}
+#tip {
+    color: #C70003;
+    line-height: 30px;
+    font-size: 90%;
+    background-color: #FF8955;
+}
+#qw {
+    background-color: #FFFFFF;
+    line-height: 45px;
+    padding-left: 21px;
+    border-bottom: 1px solid rgba(219,219,219,1.00);
+}
+#qqq {
+    background-color: rgba(255,255,255,1.00);
+    margin-right: 30px;
+}
+#shurukuang  {
+    background-color: rgba(255,255,255,1.00);
+    border-width: 0px;
+}
+#qqqtwo {
+    background-color: rgba(255,255,255,1.00);
+    margin-right: 18px;
+}
+#qw button {
+    color: #1FA8F3;
+    padding-left: 6px;
+    padding-right: 6px;
+    border: 1px solid #1FA8F3;
+    background-color: #FFFFFF;
+}
+#eee {
+    color: #4E4E4E;
+    font-size: 50%;
+    margin-top: 9px;
+    margin-left: 10px;
+}
+body input {
+
+}
+
+
+
+#shurukuangtwo  {
+    background-color: rgba(255,255,255,1.00);
+    border-width: 0px;
+}
+#chaxun {
+    width: 80%;
+    height: 39px;
+    color: #FFFFFF;
+    border-radius: 30px;
+    background-color: #1FA8F3;
+    border-width: 0px;
+
+}
+#chaxunanniu {
+    margin-top: 60px;
+    text-align: center;
+    width: 100%;
+}
+
+body {
+    width: 100%;
+}
