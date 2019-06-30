@@ -230,6 +230,13 @@ a:hover {
   -ms-transform: rotate(-30deg) translate(2px, 0px);
   transform: rotate(-30deg) translate(2px, 0px);
 }
+#lv-container {
+  width: 38rem;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 .container {
   width: 38rem;
   margin: 0 auto;
