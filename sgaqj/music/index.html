@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>仿网易云音乐外链播放器UI的HTML5音乐播放器插件|DEMO_jQuery之家-自由分享jQuery、html5、css3的插件库</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" href="dist/APlayer.min.css">
+	<style type="text/css">
+		body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+        .container {
+			max-width: 330px;
+			max-height: 86px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        hr {
+            display: block;
+            width: 30rem;
+            height: 1px;
+            margin: 2.5rem 0;
+            background-color: #eee;
+            border: 0;
+        }
+        .aplayer .aplayer-info .aplayer-music .aplayer-author{
+        	color: #fff;
+		}
+		#player1 {
+    		display: none;
+		}
+		#player2 {
+    		display: none;
+		}
+	</style>
+</head>
+<body>
+	<article class="htmleaf-container">
+		<div class="container">
+	        <div id="player3" class="aplayer">
+	            <pre class="aplayer-lrc-content">
+						[ti:花海]
+						[ar:周杰伦]
+						[al:]
+						[offset:0]
+						[00:04.41]花海 Jay Chou
+						[00:27.10]静止了 所有的花开
+						[00:33.28]遥远了 清晰的爱
+						[00:40.10]天弥漫 爱却更喜欢
+						[00:46.30]那时候 我不懂 这叫爱
+						[00:52.79]你喜欢 站在那窗台
+						[00:58.91]你好久 都没再来
+						[01:04.67]彩色的 实际让人很空白
+						[01:11.98]是你流的泪晕开
+						[01:17.54]不要你离开 距离隔不开
+						[01:23.79]思念变成海 在窗外进不来
+						[01:30.23]原谅说太快 爱成了阻碍
+						[01:36.48]手中的风筝放太快回不来
+						[01:43.92]不要你离开 回忆花不开
+						[01:49.67]请你等重来 我在等待重来
+						[01:56.17]天空仍灿烂 她爱着大海
+						[02:02.36]情歌被打败 爱已不存在
+						[02:09.55]
+						[02:20.30]
+						[02:34.99]你喜欢 站在那窗台
+						[02:41.36]你好久 都没再来
+						[02:47.99]彩色的 实际让人很空白
+						[02:55.12]是你流的泪晕开
+						[03:00.12]不要你离开 距离隔不开
+						[03:06.05]思念变成海 在窗外进不来
+						[03:12.43]原谅说太快 爱成了阻碍
+						[03:18.62]手中的风筝放太快回不来
+						[03:24.56]不要你离开 回忆花不开
+						[03:31.50]请你等重来 我在等待重来
+						[03:37.81]天空仍灿烂 她爱着大海
+						[03:44.62]情歌被打败 爱已不存在
+						[03:58.44]
+	            </pre>
+	        </div>
+
+	        <div id="player1" class="aplayer"></div>
+
+	        <div id="player2" class="aplayer"></div>
+
+	</article>
+	
+	<script src="dist/APlayer.min.js"></script>
+    <script>
+        var ap1 = new APlayer({
+            element: document.getElementById('player1'),
+            narrow: false,
+            autoplay: false,
+            showlrc: false,
+            music: {
+                title: 'Preparation',
+                author: 'Hans Zimmer/Richard Harvey',
+                url: 'http://7xifn9.com1.z0.glb.clouddn.com/Preparation.mp3',
+                pic: 'http://7xifn9.com1.z0.glb.clouddn.com/Preparation.jpg'
+            }
+        });
+        ap1.init();
+        var ap2 = new APlayer({
+            element: document.getElementById('player2'),
+            narrow: true,
+            autoplay: false,
+            showlrc: false,
+            music: {
+                title: 'Preparation',
+                author: 'Hans Zimmer/Richard Harvey',
+                url: 'http://7xifn9.com1.z0.glb.clouddn.com/Preparation.mp3',
+                pic: 'http://7xifn9.com1.z0.glb.clouddn.com/Preparation.jpg'
+            }
+        });
+        ap2.init();
+        var ap3 = new APlayer({
+            element: document.getElementById('player3'),
+            narrow: false,
+            autoplay: true,
+            showlrc: true,
+            music: {
+                title: '花海',
+                author: '周杰伦',
+                url: './huahai.mp3',
+                pic: './DSC01475.jpg'
+            }
+        });
+        ap3.init();
+    </script>
+</body>
+</html>

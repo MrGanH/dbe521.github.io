@@ -1,0 +1,229 @@
+<!doctype html> 
+<html lang=zh> 
+    <head> 
+        <meta charset=UTF-8> 
+        <meta name=viewport content="width=device-width,initial-scale=1"> 
+        <meta http-equiv=X-UA-Compatible content="ie=edge"> 
+        <title>茵茵</title> 
+        <link href="dist/index.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/default.css">
+        <style>
+            @-webkit-keyframes animation{from{opacity:0; -webkit-transform:scale(1.2) rotateX(45deg);transform:scale(1.2) rotateX(45deg);} to{ }}
+        
+            @-webkit-keyframes animation2{from{opacity:0; -webkit-transform:scale(1.2) rotateX(45deg);transform:scale(1.2) rotateX(45deg);} to{ }}
+
+            .slider div p{color:#1c1c1c;position:absolute;bottom:-55px; font-family:Raleway; font-size:16px;}
+            .slider{
+                -webkit-animation:animation ease 1s;animation-delay:.8s;animation-fill-mode:backwards;
+                margin: auto;
+                height:365px;
+                width:255px;
+                padding: auto;
+                top:1px;
+                perspective:1000px;
+                transition:ease-in-out .2s;
+                /*-webkit-transform:rotateX(45deg);
+                -webkit-transform-style:preserve-3d;
+                position:absolute;*/
+            }
+            /*.slider:active{ -webkit-transform:rotateZ(10deg);}*/
+            .slide img { text-align:center;width:100%; height:100%; -webkit-user-drag:none;user-drag:none;-moz-user-drag:none; border-radius:2px; }
+            .slide{
+                -webkit-user-select:none;
+                user-select:none;
+                -moz-user-select:none;
+                position:absolute;
+                height:285px;
+                width:255px;
+                box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.3);
+                background:#fcfcfc;
+                -webkit-transform-style:preserve-3d;
+                transform-style:preserve-3d;
+                -moz-transform-style:preserve-3d;
+                text-align:center;
+                /*overflow:hidden;*/
+                border:12px white solid;
+                box-sizing:border-box;
+                border-bottom:55px white solid;
+                border-radius:5px; 
+            }
+            .transition {
+                -webkit-transition: cubic-bezier(0,1.95,.49,.73) .4s ;
+                -moz-transition: cubic-bezier(0,1.95,.49,.73) .4s ;
+                transition: cubic-bezier(0,1.95,.49,.73) .4s ;
+            }
+            </style>
+    </head> 
+    <body> 
+        <div id=content :class="'status-theme-' + statusTheme"> 
+            <a @click=changeLang() id=lang-config :class="'lang-' + lang"></a> 
+            <div id=mobile> 
+                <div id=system-status> 
+                    <div id=system-status-left class=system-status-content>   
+                    </div> 
+                    <div id=system-status-center class=system-status-content> 
+                        
+                    </div> 
+                    <div id=system-status-right class=system-status-content>
+                    </div> 
+                </div> 
+                <!--<div class=mobile-out-app >
+                   test
+                    <div id=mobile-out-app-bottom class="mobile-out-app-bottom app-container"> 
+                        test1
+                    </div> 
+                </div> -->
+
+                <div class="htmleaf-container">
+                    <header class="htmleaf-header bocolor-11">
+                        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="./music/index.html"></iframe>
+                    </header>
+                    
+                    <div class="htmleaf-content">
+                        <div class="slider">
+                            <div class="slide" ><img src="https://ae01.alicdn.com/kf/Udd8b9388b673475db058e727a048d1d4F.jpg" /><p> </p></div>
+                            <div class="slide" ><img src="https://ae01.alicdn.com/kf/U7a0d99701d654000be6ea4aea79a66a3k.jpg" /><p> </p></div>
+                            <div class="slide" ><img src="https://ae01.alicdn.com/kf/Uff052c2c4e7344fb96c0660dd6161de0J.jpg" /><p> </p></div>
+                            <div class="slide" ><img src="https://ae01.alicdn.com/kf/Uc30251037a3549debf479498d6465da6k.jpg" /><p> </p></div>
+                            <div class="slide" ><img src="https://ae01.alicdn.com/kf/Ub40349d498b44b63915b0daf969820d5j.jpg" /><p>一切</p></div>
+                            <div class="slide"><img src="https://ae01.alicdn.com/kf/U476c50845fde479e8156ea979b424500r.jpg" /><p>关于你的</p></div>
+                            <div class="slide"><img src="https://ae01.alicdn.com/kf/Uac67f05aa00445e5ad98cf090e4c0a6eK.jpg" /><p>只想保护好</p></div>
+                            <div class="slide" ><img src="https://ae01.alicdn.com/kf/Ue96a9840b60a423188488438d0d2714aq.jpg" /><p>可盐</p></div>
+                            <div class="slide" ><img src="https://ae01.alicdn.com/kf/Ub1b63622e6e94d62a4882e0cca724820K.jpg" /><p>可甜</p></div>
+                            <div class="slide"><img src="https://ae01.alicdn.com/kf/U2cb02554c0884412961657e8ad0d4e02e.jpg" /><p>我怎么睡得着</p></div>
+                            <div class="slide"><img src="https://ae01.alicdn.com/kf/U792b4924daa34b0e87cd58eb69fba522k.jpg" /><p>看不见你的笑</p></div>
+                            <div class="slide" ><img src="https://ae01.alicdn.com/kf/U900cde088e6e40f68ac7b93d544a7063t.jpg" /><p>每一天</p></div>
+                            <div class="slide"><img src="https://ae01.alicdn.com/kf/Uaf1cc80136db4f4dae7779411ddec80cs.jpg" /><p>爱你</p></div>
+                            <div class="slide"><img src="https://ae01.alicdn.com/kf/Uf71e524e7b3747c0a0cb9805e889b2a0s.jpg" /><p>甜甜的</p></div>
+                            <div class="slide" ><img src="https://ae01.alicdn.com/kf/U1ce0cb117a0c4fe1a6acbb289cbfaee7v.jpg" /><p>心动</p></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <script src='js/stopExecutionOnTimeout.js?t=1'></script>
+                <script>
+                window.addEventListener('load', onWndLoad, false);
+                function onWndLoad() {
+                    var slider = document.querySelector('.slider');
+                    var sliders = slider.children;
+                    var initX = null;
+                    var transX = 0;
+                    var rotZ = 0;
+                    var transY = 0;
+                    var curSlide = null;
+                    var Z_DIS = 50;
+                    var Y_DIS = 10;
+                    var TRANS_DUR = 0.4;
+                    var images = document.querySelectorAll('img');
+                    for (var i = 0; i < images.length; i++) {
+                        if (window.CP.shouldStopExecution(1)) {
+                            break;
+                        }
+                        images[i].onmousemove = function (e) {
+                            e.preventDefault();
+                        };
+                        images[i].ondragstart = function (e) {
+                            return false;
+                        };
+                    }
+                    window.CP.exitedLoop(1);
+                    function init() {
+                        var z = 0, y = 0;
+                        for (var i = sliders.length - 1; i >= 0; i--) {
+                            if (window.CP.shouldStopExecution(2)) {
+                                break;
+                            }
+                            sliders[i].style.transform = 'translateZ(' + z + 'px) translateY(' + y + 'px)';
+                            z -= Z_DIS;
+                            y += Y_DIS;
+                        }
+                        window.CP.exitedLoop(2);
+                        attachEvents(sliders[sliders.length - 1]);
+                    }
+                    function attachEvents(elem) {
+                        curSlide = elem;
+                        curSlide.addEventListener('mousedown', slideMouseDown, false);
+                        curSlide.addEventListener('touchstart', slideMouseDown, false);
+                    }
+                    init();
+                    function slideMouseDown(e) {
+                        if (e.touches) {
+                            initX = e.touches[0].clientX;
+                        } else {
+                            initX = e.pageX;
+                        }
+                        document.addEventListener('mousemove', slideMouseMove, false);
+                        document.addEventListener('touchmove', slideMouseMove, false);
+                        document.addEventListener('mouseup', slideMouseUp, false);
+                        document.addEventListener('touchend', slideMouseUp, false);
+                    }
+                    var prevSlide = null;
+                    function slideMouseMove(e) {
+                        var mouseX;
+                        if (e.touches) {
+                            mouseX = e.touches[0].clientX;
+                        } else {
+                            mouseX = e.pageX;
+                        }
+                        transX += mouseX - initX;
+                        rotZ = transX / 20;
+                        transY = -Math.abs(transX / 15);
+                        curSlide.style.transition = 'none';
+                        curSlide.style.webkitTransform = 'translateX(' + transX + 'px)' + ' rotateZ(' + rotZ + 'deg)' + ' translateY(' + transY + 'px)';
+                        curSlide.style.transform = 'translateX(' + transX + 'px)' + ' rotateZ(' + rotZ + 'deg)' + ' translateY(' + transY + 'px)';
+                        var j = 1;
+                        for (var i = sliders.length - 2; i >= 0; i--) {
+                            if (window.CP.shouldStopExecution(3)) {
+                                break;
+                            }
+                            sliders[i].style.webkitTransform = 'translateX(' + transX / (2 * j) + 'px)' + ' rotateZ(' + rotZ / (2 * j) + 'deg)' + ' translateY(' + Y_DIS * j + 'px)' + ' translateZ(' + -Z_DIS * j + 'px)';
+                            sliders[i].style.transform = 'translateX(' + transX / (2 * j) + 'px)' + ' rotateZ(' + rotZ / (2 * j) + 'deg)' + ' translateY(' + Y_DIS * j + 'px)' + ' translateZ(' + -Z_DIS * j + 'px)';
+                            sliders[i].style.transition = 'none';
+                            j++;
+                        }
+                        window.CP.exitedLoop(3);
+                        initX = mouseX;
+                        e.preventDefault();
+                        if (Math.abs(transX) >= curSlide.offsetWidth - 30) {
+                            document.removeEventListener('mousemove', slideMouseMove, false);
+                            document.removeEventListener('touchmove', slideMouseMove, false);
+                            curSlide.style.transition = 'ease 0.2s';
+                            curSlide.style.opacity = 0;
+                            prevSlide = curSlide;
+                            attachEvents(sliders[sliders.length - 2]);
+                            slideMouseUp();
+                            setTimeout(function () {
+                                slider.insertBefore(prevSlide, slider.firstChild);
+                                prevSlide.style.transition = 'none';
+                                prevSlide.style.opacity = '1';
+                                slideMouseUp();
+                            }, 201);
+                            return;
+                        }
+                    }
+                    function slideMouseUp() {
+                        transX = 0;
+                        rotZ = 0;
+                        transY = 0;
+                        curSlide.style.transition = 'cubic-bezier(0,1.95,.49,.73) ' + TRANS_DUR + 's';
+                        curSlide.style.webkitTransform = 'translateX(' + transX + 'px)' + 'rotateZ(' + rotZ + 'deg)' + ' translateY(' + transY + 'px)';
+                        curSlide.style.transform = 'translateX(' + transX + 'px)' + 'rotateZ(' + rotZ + 'deg)' + ' translateY(' + transY + 'px)';
+                        var j = 1;
+                        for (var i = sliders.length - 2; i >= 0; i--) {
+                            sliders[i].style.transition = 'cubic-bezier(0,1.95,.49,.73) ' + TRANS_DUR / (j + 0.9) + 's';
+                            sliders[i].style.webkitTransform = 'translateX(' + transX + 'px)' + 'rotateZ(' + rotZ + 'deg)' + ' translateY(' + Y_DIS * j + 'px)' + ' translateZ(' + -Z_DIS * j + 'px)';
+                            sliders[i].style.transform = 'translateX(' + transX + 'px)' + 'rotateZ(' + rotZ + 'deg)' + ' translateY(' + Y_DIS * j + 'px)' + ' translateZ(' + -Z_DIS * j + 'px)';
+                            j++;
+                        }
+                        document.removeEventListener('mousemove', slideMouseMove, false);
+                        document.removeEventListener('touchmove', slideMouseMove, false);
+                    }
+                }
+                </script>
+
+            </div> 
+        </div>  
+        <script type="text/javascript" src="dist/index.js"></script>
+    </body> 
+</html> 
